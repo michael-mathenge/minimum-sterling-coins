@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Minimum Sterling Coins - Michael Mathenge</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+  </head>
+  <body>
+    <a href="#content" class="sr-only">Skip to main content</a>
+    <div class="container">
+
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1>Minimum Sterling Coins</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+          <label for="pennies-input" class="sr-only">Enter Amount of Pennies</label>
+          <input class="form-control input-lg" id="pennies-input" type="text" placeholder="Enter a sterling amount..." autofocus>
+          <span class="help-block">For example: £1.23, 123p</span>
+          <div class="alert alert-danger" id="error-alert"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="panel panel-info" id="results-panel">
+            <div class="panel-heading">
+              <h2 class="panel-title">Results:</h2>
+            </div>
+            <div class="panel-body" id="results"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Explanation:</h2>
+            </div>
+            <div class="panel-body">
+              Given an amount of pennies, it will calculate the minimum number of Sterling coins needed to make that amount.
+              <br><br>
+              Eg. £12.34 = 6 x £2, 1 x 20p, 1 x 10p, 2 x 2p
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-12">
+          <p><a href="https://github.com/michael-mathenge" target="_blank">Github Repository</a> &copy; <a href="http://www.michael-mathenge.com" target="_blank">Michael Mathenge</a> 2017</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Libraries-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--Functionality-->
+    <script src="../src/input.js"></script>
+    <script src="../src/validation.js"></script>
+    <script src="../src/parsing.js"></script>
+    <script src="../src/calculation.js"></script>
+  </body>
+</html>
